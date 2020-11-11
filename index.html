@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>カレンダー</title>
+</head>
+<body>
+    <h1>表示するカレンダーを選択</h1>
+    <input type="number" inputmode="numeric" placeholder="年" id="year" onkeydown="return event.keyCode !== 69">
+    <input type="number" inputmode="numeric" placeholder="月" min="1" max="12" id="month" onkeydown="return event.keyCode !== 69">
+    <button type="button" id="button">表示</button>
+    <h1 id="name"></h1>
+    <table border="1" id="calender"></table>
+</body>
+<script src="app.js"></script>
+</html>
